@@ -1,0 +1,132 @@
+ @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100&display=swap');
+
+
+ *,
+ *::before,
+ *::after{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+ html{
+   font-family: 'Jost', sans-serif;
+ }
+
+ /* h2{
+     font-weight: bold;
+ } */
+
+.main-div{
+    width: 100vw;
+     height: 100vh;
+     background-color: #f6f6f6;
+     display: grid;
+     place-items: center;
+}
+
+ .inner-div{
+    width: 27rem;
+    height: 40rem;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);   
+    display: grid;
+    place-items: center;
+}
+.image-container{
+    width:25rem ;
+    height: 25rem;
+    margin: auto;
+   
+}
+ img{
+    max-width: 80%;
+    display: block; 
+    width: 18vw;
+   height: 18vw; 
+   margin: 70px 30px;
+   border-radius: 50%;
+   object-fit: cover;
+   box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2); 
+   
+} 
+
+
+.music-control{
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+
+}
+
+.music-control .fas{
+    color: #111111;
+    font-size: 1.5rem;
+    cursor: pointer;
+    filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4));
+}
+
+.music-control .main-button{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #111;
+    color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin:auto;
+    margin-bottom: 6.5rem;
+    
+    
+}
+
+.music-control .fas:hover{
+    color: gray;
+}
+
+.music-control .fa-play:hover{
+    background-color: #f6f6f6;
+    color: #111;
+    box-shadow: 0 1rem 2rem 0.2rem rgba(0, 0, 0, 0.4);
+}
+.inner-div #title{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.5rem;
+    color:#171717;
+    margin:2rem 0 0.5 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-weight: bold;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+    
+}
+
+.inner-div #artist{
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;   
+    color:#cccaca;
+    margin:2rem 0 0.5 0;
+    font-size: 2rem;
+    font-weight: 300;
+    
+}
+
+.anime{
+        animation: rotatePlayer 3s linear infinite;
+    }
+
+@keyframes rotatePlayer{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
